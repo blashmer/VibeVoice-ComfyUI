@@ -1,0 +1,70 @@
+{
+  "id": "vv_editor_replace_chunk",
+  "revision": 0,
+  "last_node_id": 3,
+  "last_link_id": 0,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "Note",
+      "pos": [
+        -220,
+        -120
+      ],
+      "size": [
+        420,
+        120
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "Set the project.json path, choose the chunk index, then flip Active to true when you want to apply the replacement.\nSwitch mode between TTS and Import as needed."
+      ]
+    },
+    {
+      "id": 2,
+      "type": "VVChunkEditorNode",
+      "pos": [
+        -220,
+        40
+      ],
+      "size": [
+        420,
+        360
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {"name": "project_json", "type": "STRING", "link": null, "widget": {"name": "project_json"}},
+        {"name": "index", "type": "INT", "link": null, "widget": {"name": "index"}},
+        {"name": "mode", "type": "COMBO", "link": null, "widget": {"name": "mode"}},
+        {"name": "timeline_mode", "type": "COMBO", "link": null, "widget": {"name": "timeline_mode"}},
+        {"name": "active", "type": "BOOLEAN", "link": null, "widget": {"name": "active"}}
+      ],
+      "outputs": [
+        {"name": "project_json", "type": "STRING", "links": []}
+      ],
+      "properties": {
+        "Node name for S&R": "VVChunkEditorNode",
+        "cnr_id": "VibeVoice-ComfyUI"
+      },
+      "widgets_values": [
+        "",
+        1,
+        "tts",
+        "free",
+        false
+      ]
+    }
+  ],
+  "links": [],
+  "groups": [],
+  "config": {},
+  "extra": {},
+  "version": 0.4
+}
