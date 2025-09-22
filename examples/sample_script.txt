@@ -1,0 +1,4 @@
+Welcome back to VibeVoice Daily.
+Today we are testing targeted chunk regeneration for the narration.
+Each sentence will become its own chunk so we can retry it later if needed.
+Thanks for listening and see you tomorrow.

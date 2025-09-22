@@ -2,5 +2,8 @@
   "VibeVoice Load Text From File": "Load .txt from ComfyUI input/output/temp",
   "VibeVoice Single Speaker": "Single-speaker TTS with optional voice cloning",
   "VibeVoice Multiple Speakers": "Multi-speaker TTS ([1]..[4]) with optional clones",
-  "VibeVoice Free Memory": "Frees loaded VibeVoice models; passthrough audio"
+  "VibeVoice Free Memory": "Frees loaded VibeVoice models; passthrough audio",
+  "VV Generate Project": "Generate a sequential chunk project and write project.json",
+  "VV Build Final Mix": "Crossfade and normalize the active chunks into final_mix.flac",
+  "VV Chunk Editor": "Always-on chunk editor with Active toggle and import/TTS modes"
 }

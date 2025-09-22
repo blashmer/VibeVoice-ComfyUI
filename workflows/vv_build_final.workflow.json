@@ -1,0 +1,64 @@
+{
+  "id": "vv_build_final",
+  "revision": 0,
+  "last_node_id": 3,
+  "last_link_id": 0,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "Note",
+      "pos": [
+        -200,
+        -120
+      ],
+      "size": [
+        420,
+        100
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "Point to an existing project.json and run the VV Build Final Mix node whenever you want to regenerate final_mix.flac."
+      ]
+    },
+    {
+      "id": 2,
+      "type": "VVBuildFinalMixNode",
+      "pos": [
+        -200,
+        20
+      ],
+      "size": [
+        420,
+        180
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {"name": "project_json", "type": "STRING", "link": null, "widget": {"name": "project_json"}},
+        {"name": "active", "type": "BOOLEAN", "link": null, "widget": {"name": "active"}}
+      ],
+      "outputs": [
+        {"name": "final_mix", "type": "STRING", "links": []}
+      ],
+      "properties": {
+        "Node name for S&R": "VVBuildFinalMixNode",
+        "cnr_id": "VibeVoice-ComfyUI"
+      },
+      "widgets_values": [
+        "",
+        true
+      ]
+    }
+  ],
+  "links": [],
+  "groups": [],
+  "config": {},
+  "extra": {},
+  "version": 0.4
+}

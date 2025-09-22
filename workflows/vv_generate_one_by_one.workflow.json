@@ -1,0 +1,90 @@
+{
+  "id": "vv_generate_one_by_one",
+  "revision": 0,
+  "last_node_id": 3,
+  "last_link_id": 0,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "Note",
+      "pos": [
+        -200,
+        -120
+      ],
+      "size": [
+        420,
+        120
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "Run the VV Generate Project node to create a new project in your ComfyUI/output folder.\nThe default script points to examples/sample_script.txt inside this repository."
+      ]
+    },
+    {
+      "id": 2,
+      "type": "VVGenerateProjectNode",
+      "pos": [
+        -200,
+        40
+      ],
+      "size": [
+        420,
+        420
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {"name": "script_path", "type": "STRING", "link": null, "widget": {"name": "script_path"}},
+        {"name": "project_name", "type": "STRING", "link": null, "widget": {"name": "project_name"}},
+        {"name": "sample_rate", "type": "INT", "link": null, "widget": {"name": "sample_rate"}},
+        {"name": "loudness_lufs", "type": "FLOAT", "link": null, "widget": {"name": "loudness_lufs"}},
+        {"name": "crossfade_ms", "type": "INT", "link": null, "widget": {"name": "crossfade_ms"}},
+        {"name": "global_seed", "type": "INT", "link": null, "widget": {"name": "global_seed"}},
+        {"name": "model", "type": "COMBO", "link": null, "widget": {"name": "model"}},
+        {"name": "attention_type", "type": "COMBO", "link": null, "widget": {"name": "attention_type"}},
+        {"name": "diffusion_steps", "type": "INT", "link": null, "widget": {"name": "diffusion_steps"}},
+        {"name": "cfg_scale", "type": "FLOAT", "link": null, "widget": {"name": "cfg_scale"}},
+        {"name": "use_sampling", "type": "BOOLEAN", "link": null, "widget": {"name": "use_sampling"}},
+        {"name": "temperature", "type": "FLOAT", "link": null, "widget": {"name": "temperature"}},
+        {"name": "top_p", "type": "FLOAT", "link": null, "widget": {"name": "top_p"}},
+        {"name": "max_words_per_chunk", "type": "INT", "link": null, "widget": {"name": "max_words_per_chunk"}},
+        {"name": "active", "type": "BOOLEAN", "link": null, "widget": {"name": "active"}}
+      ],
+      "outputs": [
+        {"name": "project_json", "type": "STRING", "links": []}
+      ],
+      "properties": {
+        "Node name for S&R": "VVGenerateProjectNode",
+        "cnr_id": "VibeVoice-ComfyUI"
+      },
+      "widgets_values": [
+        "{repo}/examples/sample_script.txt",
+        "MyProject",
+        24000,
+        -16.0,
+        40,
+        42,
+        "VibeVoice-Large",
+        "auto",
+        20,
+        1.3,
+        false,
+        0.95,
+        0.95,
+        80,
+        true
+      ]
+    }
+  ],
+  "links": [],
+  "groups": [],
+  "config": {},
+  "extra": {},
+  "version": 0.4
+}
